@@ -24,8 +24,8 @@ app.post('/add-blog', (req, res) => {
     const incomingData = req.body;
 
     try {
-        const newBlog = new BlogModel(incomingData);
-        newBlog.save();
+        const newUser = new UserModel(incomingData);
+        UserBlog.save();
 
         res.status(200).send({
             message: 'saved blog'
